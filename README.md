@@ -4,4 +4,4 @@
 
 ## 言語
 
-Angular
+Angular v11
