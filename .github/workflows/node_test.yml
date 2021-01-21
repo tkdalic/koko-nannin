@@ -1,9 +1,9 @@
 name: anuglar test
 
-on: [pull_request]
+on: pull_request
 
 jobs:
-  build:
+  node_test:
     runs-on: ubuntu-latest
 
     strategy:
