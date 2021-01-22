@@ -3,11 +3,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 
 @Component({
-  selector: 'app-check-box',
-  templateUrl: './check-box.component.html',
-  styleUrls: ['./check-box.component.scss'],
+  selector: 'app-checkbox',
+  templateUrl: './checkbox.component.html',
+  styleUrls: ['./checkbox.component.scss'],
 })
-export class CheckBoxComponent implements ControlValueAccessor {
+export class CheckboxComponent implements ControlValueAccessor {
   value = false;
   onChange = (value: boolean) => {};
   onTouched = (value: boolean) => {};
