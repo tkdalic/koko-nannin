@@ -24,12 +24,10 @@ const Template: Story<CheckBoxComponent | { ngModel: boolean }> = (
 
 export const True = Template.bind({});
 True.args = {
-  label: 'Checked?',
   ngModel: true,
 };
 
 export const False = Template.bind({});
 False.args = {
-  label: 'Checked?',
   ngModel: false,
 };

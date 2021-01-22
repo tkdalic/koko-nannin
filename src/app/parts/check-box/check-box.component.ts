@@ -8,7 +8,6 @@ import { ControlValueAccessor } from '@angular/forms';
   styleUrls: ['./check-box.component.scss'],
 })
 export class CheckBoxComponent implements ControlValueAccessor {
-  @Input() label: string = '';
   value = false;
   onChange = (value: boolean) => {};
   onTouched = (value: boolean) => {};
