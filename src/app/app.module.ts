@@ -7,9 +7,10 @@ import { CheckBoxComponent } from './parts/check-box/check-box.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';
 
 @NgModule({
-  declarations: [AppComponent, CheckBoxComponent],
+  declarations: [AppComponent, CheckBoxComponent, CheckboxListItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
