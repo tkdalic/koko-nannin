@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CheckboxComponent } from './parts/checkbox/checkbox.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';
 
@@ -17,6 +18,7 @@ import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-l
     BrowserAnimationsModule,
     FormsModule,
     MatCheckboxModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

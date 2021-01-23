@@ -92,14 +92,14 @@
         },
         {
             "name": "CheckboxComponent",
-            "id": "component-CheckboxComponent-1a2814322b7362dd4fa3c7fcb7883e35",
+            "id": "component-CheckboxComponent-f601c4a2d993bdc1cf67a6e30069ab5c",
             "file": "src/app/parts/checkbox/checkbox.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-check-box",
+            "selector": "app-checkbox",
             "styleUrls": [
                 "./checkbox.component.scss"
             ],
@@ -138,14 +138,6 @@
             ],
             "methodsClass": [
                 {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 17
-                },
-                {
                     "name": "registerOnChange",
                     "args": [
                         {
@@ -162,7 +154,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 23,
+                    "line": 21,
                     "jsdoctags": [
                         {
                             "name": "fn",
@@ -196,7 +188,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 27,
+                    "line": 25,
                     "jsdoctags": [
                         {
                             "name": "fn",
@@ -224,7 +216,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 19,
+                    "line": 17,
                     "jsdoctags": [
                         {
                             "name": "value",
@@ -241,7 +233,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { FnParam } from '@angular/compiler/src/output/output_ast';\nimport { Component, Input, OnInit } from '@angular/core';\nimport { ControlValueAccessor } from '@angular/forms';\n\n@Component({\n  selector: 'app-check-box',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.scss'],\n})\nexport class CheckboxComponent implements ControlValueAccessor {\n  value = false;\n  onChange = (value: boolean) => {};\n  onTouched = (value: boolean) => {};\n\n  constructor() {}\n\n  ngOnInit(): void {}\n\n  writeValue(value: boolean) {\n    this.value = value;\n  }\n\n  registerOnChange(fn: (value: boolean) => void) {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: (value: boolean) => void) {\n    this.onTouched = fn;\n  }\n}\n",
+            "sourceCode": "import { FnParam } from '@angular/compiler/src/output/output_ast';\nimport { Component, Input, OnInit } from '@angular/core';\nimport { ControlValueAccessor } from '@angular/forms';\n\n@Component({\n  selector: 'app-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.scss'],\n})\nexport class CheckboxComponent implements ControlValueAccessor {\n  value = false;\n  onChange = (value: boolean) => {};\n  onTouched = (value: boolean) => {};\n\n  constructor() {}\n\n  writeValue(value: boolean): void {\n    this.value = value;\n  }\n\n  registerOnChange(fn: (value: boolean) => void): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: (value: boolean) => void): void {\n    this.onTouched = fn;\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -259,11 +251,11 @@
             "implements": [
                 "ControlValueAccessor"
             ],
-            "templateData": ""
+            "templateData": "<mat-checkbox [(ngModel)]=\"value\"></mat-checkbox>"
         },
         {
             "name": "CheckboxListItemComponent",
-            "id": "component-CheckboxListItemComponent-6d57d47bbbc34d8cdc9e5d3f9fc67277",
+            "id": "component-CheckboxListItemComponent-f9bb8a5bbe1127e19092c3f12288c438",
             "file": "src/app/parts/checkbox-list-item/checkbox-list-item.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -279,7 +271,18 @@
                 "./checkbox-list-item.component.html"
             ],
             "viewProviders": [],
-            "inputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "line": 10
+                },
+                {
+                    "name": "value",
+                    "defaultValue": "false",
+                    "line": 9
+                }
+            ],
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [
@@ -289,7 +292,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 12
+                    "line": 14
                 }
             ],
             "hostBindings": [],
@@ -297,7 +300,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox-list-item',\n  templateUrl: './checkbox-list-item.component.html',\n  styleUrls: ['./checkbox-list-item.component.scss']\n})\nexport class CheckboxListItemComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox-list-item',\n  templateUrl: './checkbox-list-item.component.html',\n  styleUrls: ['./checkbox-list-item.component.scss'],\n})\nexport class CheckboxListItemComponent implements OnInit {\n  @Input() value = false;\n  @Input() label = '';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -310,12 +313,12 @@
                 "name": "constructor",
                 "description": "",
                 "args": [],
-                "line": 8
+                "line": 10
             },
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>checkbox-list-item works!</p>\n"
+            "templateData": "<mat-card>\n  <label>\n    <app-checkbox [(ngModel)]=\"value\"></app-checkbox>\n    {{ label }}\n  </label>\n</mat-card>\n"
         }
     ],
     "modules": [
@@ -410,17 +413,17 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
+                "file": "src/environments/environment.ts",
                 "type": "object",
-                "defaultValue": "{\n  production: true\n}"
+                "defaultValue": "{\n  production: false\n}"
             },
             {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
+                "file": "src/environments/environment.prod.ts",
                 "type": "object",
-                "defaultValue": "{\n  production: false\n}"
+                "defaultValue": "{\n  production: true\n}"
             },
             {
                 "name": "False",
@@ -431,11 +434,27 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Item",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/checkbox-list-item.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "require",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/test.ts",
                 "type": "literal type"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/checkbox-list-item.stories.ts",
+                "type": "Story<CheckboxListItemComponent>",
+                "defaultValue": "(\n  args: CheckboxListItemComponent\n) => ({\n  component: CheckboxListItemComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -475,16 +494,6 @@
                     "type": "literal type"
                 }
             ],
-            "src/environments/environment.prod.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
-                }
-            ],
             "src/environments/environment.ts": [
                 {
                     "name": "environment",
@@ -493,6 +502,16 @@
                     "file": "src/environments/environment.ts",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n  production: true\n}"
                 }
             ],
             "src/stories/checkbox.stories.ts": [
@@ -519,6 +538,24 @@
                     "file": "src/stories/checkbox.stories.ts",
                     "type": "",
                     "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/stories/checkbox-list-item.stories.ts": [
+                {
+                    "name": "Item",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/checkbox-list-item.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/checkbox-list-item.stories.ts",
+                    "type": "Story<CheckboxListItemComponent>",
+                    "defaultValue": "(\n  args: CheckboxListItemComponent\n) => ({\n  component: CheckboxListItemComponent,\n  props: args,\n})"
                 }
             ]
         },
@@ -568,7 +605,7 @@
                 "linktype": "component",
                 "name": "CheckboxListItemComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/5",
                 "status": "low"
             },
             {
@@ -577,7 +614,7 @@
                 "linktype": "component",
                 "name": "CheckboxComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/9",
+                "coverageCount": "0/8",
                 "status": "low"
             },
             {
@@ -596,6 +633,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/checkbox-list-item.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Item",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/checkbox-list-item.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

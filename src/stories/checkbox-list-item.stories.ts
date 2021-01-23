@@ -1,5 +1,6 @@
 // also exported from '@storybook/angular' if you can deal with breaking changes in 6.1
 import { FormsModule } from '@angular/forms';
+import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { moduleMetadata } from '@storybook/angular';
 import { Story, Meta } from '@storybook/angular/types-6-0';
@@ -13,7 +14,7 @@ export default {
   decorators: [
     moduleMetadata({
       declarations: [CheckboxComponent],
-      imports: [FormsModule, MatCheckboxModule],
+      imports: [FormsModule, MatCheckboxModule, MatCardModule],
     }),
   ],
 } as Meta;
@@ -28,5 +29,5 @@ const Template: Story<CheckboxListItemComponent> = (
 export const Item = Template.bind({});
 Item.args = {
   value: false,
-  label: '兵庫県'
+  label: '兵庫県',
 };
