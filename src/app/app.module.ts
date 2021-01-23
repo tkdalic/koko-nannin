@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';
 import { ChartComponent } from './parts/chart/chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [AppComponent, CheckboxComponent, CheckboxListItemComponent, ChartComponent],
@@ -20,6 +21,7 @@ import { ChartComponent } from './parts/chart/chart.component';
     FormsModule,
     MatCheckboxModule,
     MatCardModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
