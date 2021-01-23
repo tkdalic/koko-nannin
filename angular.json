@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "koko-nannin"
+  "defaultProject": "koko-nannin",
+  "cli": {
+    "analytics": "29493975-bcdb-4898-bfe0-85e7e7d45ac3"
+  }
 }

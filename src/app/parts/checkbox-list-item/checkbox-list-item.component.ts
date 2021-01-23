@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CheckboxListItemComponent implements OnInit {
   @Input() value = false;
-  @Input() label: string = '';
+  @Input() label = '';
 
   constructor() {}
 

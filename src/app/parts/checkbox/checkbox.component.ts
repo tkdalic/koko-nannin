@@ -14,17 +14,15 @@ export class CheckboxComponent implements ControlValueAccessor {
 
   constructor() {}
 
-  ngOnInit(): void {}
-
-  writeValue(value: boolean) {
+  writeValue(value: boolean): void {
     this.value = value;
   }
 
-  registerOnChange(fn: (value: boolean) => void) {
+  registerOnChange(fn: (value: boolean) => void): void {
     this.onChange = fn;
   }
 
-  registerOnTouched(fn: (value: boolean) => void) {
+  registerOnTouched(fn: (value: boolean) => void): void {
     this.onTouched = fn;
   }
 }
