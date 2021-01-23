@@ -3,11 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { moduleMetadata } from '@storybook/angular';
 import { Story, Meta } from '@storybook/angular/types-6-0';
-import { CheckBoxComponent } from 'src/app/parts/check-box/check-box.component';
+import { CheckboxComponent } from 'src/app/parts/checkbox/checkbox.component';
 
 export default {
   title: 'Checkbox',
-  component: CheckBoxComponent,
+  component: CheckboxComponent,
   decorators: [
     moduleMetadata({
       imports: [FormsModule, MatCheckboxModule],
@@ -15,21 +15,19 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<CheckBoxComponent | { ngModel: boolean }> = (
-  args: CheckBoxComponent | { ngModel: boolean }
+const Template: Story<CheckboxComponent | { ngModel: boolean }> = (
+  args: CheckboxComponent | { ngModel: boolean }
 ) => ({
-  component: CheckBoxComponent,
+  component: CheckboxComponent,
   props: args,
 });
 
 export const True = Template.bind({});
 True.args = {
-  label: 'Checked?',
   ngModel: true,
 };
 
 export const False = Template.bind({});
 False.args = {
-  label: 'Checked?',
   ngModel: false,
 };
