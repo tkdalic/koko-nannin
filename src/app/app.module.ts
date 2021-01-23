@@ -8,12 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';
 import { ChartComponent } from './parts/chart/chart.component';
 import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
-  declarations: [AppComponent, CheckboxComponent, CheckboxListItemComponent, ChartComponent],
+  declarations: [
+    AppComponent,
+    CheckboxComponent,
+    CheckboxListItemComponent,
+    ChartComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,6 +28,7 @@ import { ChartsModule } from 'ng2-charts';
     MatCheckboxModule,
     MatCardModule,
     ChartsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
