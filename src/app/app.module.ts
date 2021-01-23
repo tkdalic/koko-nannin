@@ -9,9 +9,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';
+import { ChartComponent } from './parts/chart/chart.component';
 
 @NgModule({
-  declarations: [AppComponent, CheckboxComponent, CheckboxListItemComponent],
+  declarations: [AppComponent, CheckboxComponent, CheckboxListItemComponent, ChartComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
