@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +16,9 @@ import { HeaderComponent } from './parts/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PageLayoutComponent } from './templates/page-layout/page-layout.component';
 import { PopulationCompositionComponent } from './pages/population-composition/population-composition.component';
+import { RouterModule } from '@angular/router';
 import { InternalServerErrorComponent } from './pages/internal-server-error/internal-server-error.component';
+import { ErrorHandlerService } from './service/error-handler.service';
 
 @NgModule({
   declarations: [
@@ -39,8 +41,14 @@ import { InternalServerErrorComponent } from './pages/internal-server-error/inte
     ChartsModule,
     HttpClientModule,
     MatToolbarModule,
+    RouterModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: ErrorHandler,
+      useClass: ErrorHandlerService, // これ
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
