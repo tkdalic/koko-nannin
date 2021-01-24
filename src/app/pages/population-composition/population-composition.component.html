@@ -1,12 +1,23 @@
 <p>population-composition works!</p>
 <app-page-layout>
   <app-header header></app-header>
-  <div class="prefecture" body>
-    <app-checkbox-list-item
-      class="prefecture__card"
-      *ngFor="let prefectureInfo of prefectureInfoList"
-      [label]="prefectureInfo.prefName"
-      [value]="prefectureInfo.value"
-    ></app-checkbox-list-item>
+  <div class="body" body>
+    <div class="prefecture">
+      <app-checkbox-list-item
+        class="prefecture__card"
+        *ngFor="let prefectureInfo of prefectureInfoList"
+        [label]="prefectureInfo.prefName"
+        [(value)]="prefectureInfo.value"
+        (valueChange)="prefectureValueChange()"
+      ></app-checkbox-list-item>
+    </div>
+    <div class="chart">
+      <app-chart
+        xAxesLabel="年度（年）"
+        yAxesLabel="人口（人）"
+        [lineChartData]="lineChartData"
+        [lineChartLabels]="lineChartLabels"
+      ></app-chart>
+    </div>
   </div>
 </app-page-layout>
