@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';
 import { ChartComponent } from './parts/chart/chart.component';
 import { ChartsModule } from 'ng2-charts';
+import { HeaderComponent } from './parts/header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { ChartsModule } from 'ng2-charts';
     CheckboxComponent,
     CheckboxListItemComponent,
     ChartComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { ChartsModule } from 'ng2-charts';
     MatCardModule,
     ChartsModule,
     HttpClientModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

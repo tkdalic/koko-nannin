@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ChartDataSets, ChartOptions } from 'chart.js';
+import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
 
 @Component({
@@ -28,7 +28,7 @@ export class ChartComponent implements OnInit {
 
   lineChartLegend = true; // グラフの属性ラベル
   lineChartPlugins = [];
-  lineChartType = 'line'; // グラフの種類
+  lineChartType: ChartType = 'line'; // グラフの種類
 
   constructor() {}
 

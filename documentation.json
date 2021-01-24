@@ -1,7 +1,125 @@
 {
     "pipes": [],
     "interfaces": [],
-    "injectables": [],
+    "injectables": [
+        {
+            "name": "RestApiService",
+            "id": "injectable-RestApiService-59b73f3dccd9a3a61591e73d95b34c8a",
+            "file": "src/app/service/rest-api.service.ts",
+            "properties": [
+                {
+                    "name": "host",
+                    "defaultValue": "`${environment.host_url}/${environment.host_version}`",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        112
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "get",
+                    "args": [
+                        {
+                            "name": "path",
+                            "type": "string"
+                        },
+                        {
+                            "name": "httpOptions",
+                            "type": "object"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Promise<T>",
+                    "typeParameters": [
+                        "T"
+                    ],
+                    "line": 13,
+                    "modifierKind": [
+                        112
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "path",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "httpOptions",
+                            "type": "object",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getPopulationComposition",
+                    "args": [
+                        {
+                            "name": "prefCode",
+                            "type": "string"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Promise<object>",
+                    "typeParameters": [],
+                    "line": 28,
+                    "modifierKind": [
+                        114
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "prefCode",
+                            "type": "string",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getPrefectures",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "Promise<object>",
+                    "typeParameters": [],
+                    "line": 17,
+                    "modifierKind": [
+                        114
+                    ]
+                }
+            ],
+            "description": "",
+            "sourceCode": "import { HttpClient, HttpHeaders } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { environment } from 'src/environments/environment';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class RestApiService {\n  private host = `${environment.host_url}/${environment.host_version}`;\n\n  constructor(private http: HttpClient) {}\n\n  private get<T>(path: string, httpOptions: object): Promise<T> {\n    return this.http.get<T>(`${this.host}/${path}`, httpOptions).toPromise();\n  }\n\n  public getPrefectures(): Promise<object> {\n    const path = 'prefectures';\n    const httpOptions = {\n      headers: new HttpHeaders({\n        'Content-type': 'application/json',\n        'x-api-key': environment.resas_token as string,\n      }),\n    };\n    return this.get<object>(path, httpOptions);\n  }\n\n  public getPopulationComposition(prefCode: string): Promise<object> {\n    const path = 'population/composition/perYear';\n    const httpOptions = {\n      headers: new HttpHeaders({\n        'Content-type': 'application/json',\n        'x-api-key': environment.resas_token as string,\n        prefCode,\n        cityCode: '-',\n      }),\n    };\n    return this.get<object>(path, httpOptions);\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient"
+                    }
+                ],
+                "line": 9,
+                "jsdoctags": [
+                    {
+                        "name": "http",
+                        "type": "HttpClient",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        }
+    ],
     "classes": [
         {
             "name": "AppPage",
@@ -186,7 +304,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".chart {\n    max-width: 100%;\n    max-height: 100%;\n}",
+                    "data": ".chart {\n    width: 100%;\n}",
                     "styleUrl": "./chart.component.scss"
                 }
             ],
@@ -431,6 +549,62 @@
                 "OnInit"
             ],
             "templateData": "<mat-card>\n  <label>\n    <app-checkbox [(ngModel)]=\"value\"></app-checkbox>\n    {{ label }}\n  </label>\n</mat-card>\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-e41aded7dce8dcc9f3904c316e7fb138",
+            "file": "src/app/parts/header/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-header",
+            "styleUrls": [
+                "./header.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./header.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss']\n})\nexport class HeaderComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./header.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>header works!</p>\n"
         }
     ],
     "modules": [
@@ -455,6 +629,9 @@
                         },
                         {
                             "name": "CheckboxListItemComponent"
+                        },
+                        {
+                            "name": "HeaderComponent"
                         }
                     ]
                 },
@@ -530,7 +707,7 @@
                 "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
                 "type": "object",
-                "defaultValue": "{\n  production: true\n}"
+                "defaultValue": "{\n  production: true,\n  resas_token: process.env.RESAS_TOKEN,\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
             },
             {
                 "name": "environment",
@@ -538,7 +715,7 @@
                 "subtype": "variable",
                 "file": "src/environments/environment.ts",
                 "type": "object",
-                "defaultValue": "{\n  production: false\n}"
+                "defaultValue": "{\n  production: false,\n  resas_token: process.env.RESAS_TOKEN,\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
             },
             {
                 "name": "False",
@@ -561,6 +738,14 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/chart.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LineHeader",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -594,6 +779,14 @@
                 "file": "src/stories/checkbox.stories.ts",
                 "type": "Story<CheckboxComponent | literal type>",
                 "defaultValue": "(\n  args: CheckboxComponent | { ngModel: boolean }\n) => ({\n  component: CheckboxComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
+                "type": "Story<HeaderComponent>",
+                "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
             },
             {
                 "name": "True",
@@ -632,7 +825,7 @@
                     "subtype": "variable",
                     "file": "src/environments/environment.prod.ts",
                     "type": "object",
-                    "defaultValue": "{\n  production: true\n}"
+                    "defaultValue": "{\n  production: true,\n  resas_token: process.env.RESAS_TOKEN,\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
                 }
             ],
             "src/environments/environment.ts": [
@@ -642,7 +835,7 @@
                     "subtype": "variable",
                     "file": "src/environments/environment.ts",
                     "type": "object",
-                    "defaultValue": "{\n  production: false\n}"
+                    "defaultValue": "{\n  production: false,\n  resas_token: process.env.RESAS_TOKEN,\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
                 }
             ],
             "src/stories/checkbox.stories.ts": [
@@ -705,6 +898,24 @@
                     "file": "src/stories/chart.stories.ts",
                     "type": "Story<ChartComponent>",
                     "defaultValue": "(args: ChartComponent) => ({\n  component: ChartComponent,\n  props: args,\n})"
+                }
+            ],
+            "src/stories/header.stories.ts": [
+                {
+                    "name": "LineHeader",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "type": "Story<HeaderComponent>",
+                    "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
                 }
             ]
         },
@@ -773,6 +984,24 @@
                 "name": "CheckboxComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/parts/header/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/service/rest-api.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "RestApiService",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
@@ -861,6 +1090,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "True",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LineHeader",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
