@@ -1,5 +1,4 @@
-import { FnParam } from '@angular/compiler/src/output/output_ast';
-import { Component, forwardRef, Input, OnInit } from '@angular/core';
+import { Component, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
@@ -8,11 +7,11 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   styleUrls: ['./checkbox.component.scss'],
   providers: [
     {
-       provide: NG_VALUE_ACCESSOR,
-       useExisting: forwardRef(() => CheckboxComponent),
-       multi: true,
-     },
-   ]
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => CheckboxComponent),
+      multi: true,
+    },
+  ],
 })
 export class CheckboxComponent implements ControlValueAccessor {
   value = false;
