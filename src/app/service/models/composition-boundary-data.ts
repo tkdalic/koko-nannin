@@ -1,6 +1,6 @@
-import { CompositionCategoryData } from "./composition-category-data";
+import { CompositionCategoryData } from './composition-category-data';
 
 export interface CompositionBoundaryData {
-    boundaryYear: number,
-    data: CompositionCategoryData[],
+    boundaryYear: number;
+    data: CompositionCategoryData[];
 }

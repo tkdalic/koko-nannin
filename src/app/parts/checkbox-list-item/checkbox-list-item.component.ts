@@ -14,7 +14,7 @@ export class CheckboxListItemComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onChange(value: boolean) {
+  onChange(value: boolean): void {
     this.valueChange.emit(value);
   }
 }
