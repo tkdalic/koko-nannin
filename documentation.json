@@ -210,7 +210,7 @@
         },
         {
             "name": "ChartComponent",
-            "id": "component-ChartComponent-0155db389b0a92bd67a2f03bc731a3f8",
+            "id": "component-ChartComponent-2306ffcf25a08fd8fd67f7547feb1e5f",
             "file": "src/app/parts/chart/chart.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -279,7 +279,7 @@
                 {
                     "name": "lineChartType",
                     "defaultValue": "'line'",
-                    "type": "string",
+                    "type": "ChartType",
                     "optional": false,
                     "description": "",
                     "line": 31
@@ -300,7 +300,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { ChartDataSets, ChartOptions } from 'chart.js';\nimport { Color, Label } from 'ng2-charts';\n\n@Component({\n  selector: 'app-chart',\n  templateUrl: './chart.component.html',\n  styleUrls: ['./chart.component.scss'],\n})\nexport class ChartComponent implements OnInit {\n  // data\n  @Input() lineChartData: ChartDataSets[] = [];\n\n  // ラベル\n  @Input() lineChartLabels: Label[] = [];\n  @Input() xAxesLabel = '';\n  @Input() yAxesLabel = '';\n\n  lineChartOptions: ChartOptions = {\n    responsive: true,\n    elements: {\n      line: {\n        tension: 0,\n        fill: false,\n      },\n    },\n  };\n\n  lineChartLegend = true; // グラフの属性ラベル\n  lineChartPlugins = [];\n  lineChartType = 'line'; // グラフの種類\n\n  constructor() {}\n\n  ngOnInit(): void {\n    this.lineChartOptions.scales = {\n      xAxes: [\n        {\n          scaleLabel: {\n            display: this.xAxesLabel !== '',\n            labelString: this.xAxesLabel,\n          },\n        },\n      ],\n      yAxes: [\n        {\n          scaleLabel: {\n            display: this.yAxesLabel !== '',\n            labelString: this.yAxesLabel,\n          },\n        },\n      ],\n    };\n  }\n}\n",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { ChartDataSets, ChartOptions, ChartType } from 'chart.js';\nimport { Color, Label } from 'ng2-charts';\n\n@Component({\n  selector: 'app-chart',\n  templateUrl: './chart.component.html',\n  styleUrls: ['./chart.component.scss'],\n})\nexport class ChartComponent implements OnInit {\n  // data\n  @Input() lineChartData: ChartDataSets[] = [];\n\n  // ラベル\n  @Input() lineChartLabels: Label[] = [];\n  @Input() xAxesLabel = '';\n  @Input() yAxesLabel = '';\n\n  lineChartOptions: ChartOptions = {\n    responsive: true,\n    elements: {\n      line: {\n        tension: 0,\n        fill: false,\n      },\n    },\n  };\n\n  lineChartLegend = true; // グラフの属性ラベル\n  lineChartPlugins = [];\n  lineChartType: ChartType = 'line'; // グラフの種類\n\n  constructor() {}\n\n  ngOnInit(): void {\n    this.lineChartOptions.scales = {\n      xAxes: [\n        {\n          scaleLabel: {\n            display: this.xAxesLabel !== '',\n            labelString: this.xAxesLabel,\n          },\n        },\n      ],\n      yAxes: [\n        {\n          scaleLabel: {\n            display: this.yAxesLabel !== '',\n            labelString: this.yAxesLabel,\n          },\n        },\n      ],\n    };\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -604,7 +604,63 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>header works!</p>\n"
+            "templateData": "<mat-toolbar color=\"primary\">\n  <span>ここ何人？</span>\n</mat-toolbar>\n"
+        },
+        {
+            "name": "PageLayoutComponent",
+            "id": "component-PageLayoutComponent-6a4964cb9d824e058a99803fdc305ab5",
+            "file": "src/app/templates/page-layout/page-layout.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-page-layout",
+            "styleUrls": [
+                "./page-layout.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./page-layout.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-page-layout',\n  templateUrl: './page-layout.component.html',\n  styleUrls: ['./page-layout.component.scss']\n})\nexport class PageLayoutComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./page-layout.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>page-layout works!</p>\n"
         }
     ],
     "modules": [
@@ -632,6 +688,9 @@
                         },
                         {
                             "name": "HeaderComponent"
+                        },
+                        {
+                            "name": "PageLayoutComponent"
                         }
                     ]
                 },
@@ -726,6 +785,22 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Header",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/page-layout.stories.ts",
+                "type": "",
+                "defaultValue": "PageLayout.bind({})"
+            },
+            {
+                "name": "Header",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Item",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -742,12 +817,12 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "LineHeader",
+                "name": "PageLayout",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/header.stories.ts",
-                "type": "",
-                "defaultValue": "Template.bind({})"
+                "file": "src/stories/page-layout.stories.ts",
+                "type": "Story<PageLayoutComponent>",
+                "defaultValue": "(args: PageLayoutComponent) => ({\n  component: PageLayoutComponent,\n  props: args,\n})"
             },
             {
                 "name": "require",
@@ -864,6 +939,42 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
+            "src/stories/page-layout.stories.ts": [
+                {
+                    "name": "Header",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page-layout.stories.ts",
+                    "type": "",
+                    "defaultValue": "PageLayout.bind({})"
+                },
+                {
+                    "name": "PageLayout",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page-layout.stories.ts",
+                    "type": "Story<PageLayoutComponent>",
+                    "defaultValue": "(args: PageLayoutComponent) => ({\n  component: PageLayoutComponent,\n  props: args,\n})"
+                }
+            ],
+            "src/stories/header.stories.ts": [
+                {
+                    "name": "Header",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "type": "Story<HeaderComponent>",
+                    "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
+                }
+            ],
             "src/stories/checkbox-list-item.stories.ts": [
                 {
                     "name": "Item",
@@ -898,24 +1009,6 @@
                     "file": "src/stories/chart.stories.ts",
                     "type": "Story<ChartComponent>",
                     "defaultValue": "(args: ChartComponent) => ({\n  component: ChartComponent,\n  props: args,\n})"
-                }
-            ],
-            "src/stories/header.stories.ts": [
-                {
-                    "name": "LineHeader",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/header.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/header.stories.ts",
-                    "type": "Story<HeaderComponent>",
-                    "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
                 }
             ]
         },
@@ -1002,6 +1095,15 @@
                 "name": "RestApiService",
                 "coveragePercent": 0,
                 "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/templates/page-layout/page-layout.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageLayoutComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1099,7 +1201,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "LineHeader",
+                "name": "Header",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1110,6 +1212,26 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page-layout.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Header",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page-layout.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "PageLayout",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

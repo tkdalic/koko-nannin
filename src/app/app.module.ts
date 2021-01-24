@@ -14,6 +14,7 @@ import { ChartComponent } from './parts/chart/chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { HeaderComponent } from './parts/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { PageLayoutComponent } from './templates/page-layout/page-layout.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     CheckboxListItemComponent,
     ChartComponent,
     HeaderComponent,
+    PageLayoutComponent,
   ],
   imports: [
     BrowserModule,
