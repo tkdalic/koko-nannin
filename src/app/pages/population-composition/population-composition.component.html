@@ -1,7 +1,12 @@
 <p>population-composition works!</p>
 <app-page-layout>
-    <app-header header></app-header>
-    <div body>
-        hoge
-    </div>
+  <app-header header></app-header>
+  <div class="prefecture" body>
+    <app-checkbox-list-item
+      class="prefecture__card"
+      *ngFor="let prefectureInfo of prefectureInfoList"
+      [label]="prefectureInfo.prefName"
+      [value]="prefectureInfo.value"
+    ></app-checkbox-list-item>
+  </div>
 </app-page-layout>
