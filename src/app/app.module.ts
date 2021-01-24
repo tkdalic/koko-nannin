@@ -13,6 +13,7 @@ import { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-l
 import { ChartComponent } from './parts/chart/chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { HeaderComponent } from './parts/header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { HeaderComponent } from './parts/header/header.component';
     MatCardModule,
     ChartsModule,
     HttpClientModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
