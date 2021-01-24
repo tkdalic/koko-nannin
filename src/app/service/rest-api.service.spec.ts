@@ -24,7 +24,7 @@ describe('RestApiService', () => {
   });
 
   it('can get prefectures', async () => {
-    const testData = { result: 'test' };
+    const testData: any = { result: 'test' };
     service.getPrefectures().then((data) => {
       expect(data).toEqual(testData);
     });
