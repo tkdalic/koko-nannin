@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { PopulationCompositionResponse } from './models/population-composition-response';
+import { PrefectureResponse } from './models/prefecture-response';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +16,7 @@ export class RestApiService {
     return this.http.get<T>(`${this.host}/${path}`, httpOptions).toPromise();
   }
 
-  public getPrefectures(): Promise<object> {
+  public getPrefectures(): Promise<PrefectureResponse> {
     const path = 'prefectures';
     const httpOptions = {
       headers: new HttpHeaders({
@@ -22,19 +24,23 @@ export class RestApiService {
         'x-api-key': environment.resas_token as string,
       }),
     };
-    return this.get<object>(path, httpOptions);
+    return this.get<PrefectureResponse>(path, httpOptions);
   }
 
-  public getPopulationComposition(prefCode: string): Promise<object> {
+  public getPopulationComposition(
+    prefCode: string
+  ): Promise<PopulationCompositionResponse> {
     const path = 'population/composition/perYear';
     const httpOptions = {
+      params: {
+        prefCode,
+        cityCode: '-',
+      },
       headers: new HttpHeaders({
         'Content-type': 'application/json',
         'x-api-key': environment.resas_token as string,
-        prefCode,
-        cityCode: '-',
       }),
     };
-    return this.get<object>(path, httpOptions);
+    return this.get<PopulationCompositionResponse>(path, httpOptions);
   }
 }
