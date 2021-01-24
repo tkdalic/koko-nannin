@@ -15,6 +15,7 @@ import { ChartsModule } from 'ng2-charts';
 import { HeaderComponent } from './parts/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PageLayoutComponent } from './templates/page-layout/page-layout.component';
+import { PopulationCompositionComponent } from './pages/population-composition/population-composition.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PageLayoutComponent } from './templates/page-layout/page-layout.compone
     ChartComponent,
     HeaderComponent,
     PageLayoutComponent,
+    PopulationCompositionComponent,
   ],
   imports: [
     BrowserModule,
