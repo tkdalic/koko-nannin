@@ -16,6 +16,7 @@ import { HeaderComponent } from './parts/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PageLayoutComponent } from './templates/page-layout/page-layout.component';
 import { PopulationCompositionComponent } from './pages/population-composition/population-composition.component';
+import { InternalServerErrorComponent } from './pages/internal-server-error/internal-server-error.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { PopulationCompositionComponent } from './pages/population-composition/p
     HeaderComponent,
     PageLayoutComponent,
     PopulationCompositionComponent,
+    InternalServerErrorComponent,
   ],
   imports: [
     BrowserModule,
