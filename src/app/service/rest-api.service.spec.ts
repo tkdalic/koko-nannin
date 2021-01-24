@@ -37,7 +37,7 @@ describe('RestApiService', () => {
   });
 
   it('can get population composition', async () => {
-    const testData = { result: 'test' };
+    const testData: any = { result: 'test' };
     service.getPopulationComposition('1').then((data) => {
       expect(data).toEqual(testData);
     });
