@@ -1,6 +1,6 @@
 <mat-card>
   <label>
-    <app-checkbox [(ngModel)]="value"></app-checkbox>
+    <app-checkbox [ngModel]="value" (ngModelChange)="(onChange)"></app-checkbox>
     {{ label }}
   </label>
 </mat-card>
