@@ -42,7 +42,7 @@ describe('RestApiService', () => {
       expect(data).toEqual(testData);
     });
     const req = httpTestingController.expectOne(
-      'https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear'
+      'https://opendata.resas-portal.go.jp/api/v1/population/composition/perYear?prefCode=1&cityCode=-'
     );
     expect(req.request.method).toEqual('GET');
     req.flush(testData);
