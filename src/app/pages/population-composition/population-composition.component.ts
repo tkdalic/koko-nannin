@@ -36,6 +36,10 @@ export class PopulationCompositionComponent implements OnInit {
       (prefectureInfo) => prefectureInfo
     ) as [ChartDataSets, string[]][];
 
+    if (filteredGraphDatas.length === 0) {
+      this.lineChartData = [];
+      return;
+    }
     this.lineChartData = filteredGraphDatas.map((graphData) => graphData[0]);
     this.lineChartLabels = filteredGraphDatas[0][1];
   }
