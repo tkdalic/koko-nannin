@@ -2,13 +2,18 @@
 
 日本全国の、地域ごとの人口を表示するサービス。
 
+## demo url
+
+https://tkdalic.github.io/koko-nannin/
+
 ## Requirements
 
-node v12
+言語: node v12
 
-Angular v11
-Angular Material v11
-Chart.js v2
+フレームワーク:  
+Angular v11  
+Angular Material v11  
+Chart.js v2  
 Storybook v6
 
 ## Install
