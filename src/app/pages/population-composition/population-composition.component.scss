@@ -4,14 +4,23 @@
   margin: 20px;
 }
 
-.prefecture {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.chart{
+  &__note {
+    font-size: 0.9rem;
+    color: #888888;
+    text-align: right;
+  }
+}
 
-  &__card {
-    min-width: 150px;
-    margin: 10px;
-    flex: 1;
+.prefecture {
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__card {
+      min-width: 150px;
+      margin: 5px;
+      flex: 1;
+    }
   }
 }

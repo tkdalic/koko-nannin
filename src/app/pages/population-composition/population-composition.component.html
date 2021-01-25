@@ -2,22 +2,27 @@
 <app-page-layout>
   <app-header header></app-header>
   <div class="body" body>
-    <div class="prefecture">
-      <app-checkbox-list-item
-        class="prefecture__card"
-        *ngFor="let prefectureInfo of prefectureInfoList"
-        [label]="prefectureInfo.prefName"
-        [(value)]="prefectureInfo.value"
-        (valueChange)="prefectureValueChange()"
-      ></app-checkbox-list-item>
-    </div>
     <div class="chart">
+      <h2 class="chart__title">人口グラフ</h2>
       <app-chart
         xAxesLabel="年度（年）"
         yAxesLabel="人口（人）"
         [lineChartData]="lineChartData"
         [lineChartLabels]="lineChartLabels"
       ></app-chart>
+      <p class="chart__note">出典：RESAS（地域経済分析システム）</p>
+    </div>
+    <div class="prefecture">
+      <h2 class="prefecture__title">都道府県</h2>
+      <div class="prefecture__cards">
+        <app-checkbox-list-item
+          class="prefecture__cards__card"
+          *ngFor="let prefectureInfo of prefectureInfoList"
+          [label]="prefectureInfo.prefName"
+          [(value)]="prefectureInfo.value"
+          (valueChange)="prefectureValueChange()"
+        ></app-checkbox-list-item>
+      </div>
     </div>
   </div>
 </app-page-layout>
