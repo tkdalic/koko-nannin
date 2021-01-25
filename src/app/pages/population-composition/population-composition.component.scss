@@ -4,6 +4,14 @@
   margin: 20px;
 }
 
+.chart{
+  &__note {
+    font-size: 0.9rem;
+    color: #888888;
+    text-align: right;
+  }
+}
+
 .prefecture {
   &__cards {
     display: flex;
