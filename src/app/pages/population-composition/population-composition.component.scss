@@ -5,13 +5,14 @@
 }
 
 .prefecture {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  &__card {
-    min-width: 150px;
-    margin: 10px;
-    flex: 1;
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__card {
+      min-width: 150px;
+      margin: 5px;
+      flex: 1;
+    }
   }
 }
