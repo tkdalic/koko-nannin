@@ -12,8 +12,22 @@ export class RestApiService {
 
   constructor(private http: HttpClient) {}
 
-  private get<T>(path: string, httpOptions: object): Promise<T> {
-    return this.http.get<T>(`${this.host}/${path}`, httpOptions).toPromise();
+  private async get<T extends { message: null | string }>(
+    path: string,
+    httpOptions: object
+  ): Promise<T> {
+    return this.http
+      .get<T>(`${this.host}/${path}`, httpOptions)
+      .toPromise()
+      .then((res) => {
+        if (res.message != null) {
+          throw Error('api error');
+        }
+        return res;
+      })
+      .catch((e) => {
+        throw Error('api error');
+      });
   }
 
   public getPrefectures(): Promise<PrefectureResponse> {

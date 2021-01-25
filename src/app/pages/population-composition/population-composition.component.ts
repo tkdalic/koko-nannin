@@ -50,7 +50,7 @@ export class PopulationCompositionComponent implements OnInit {
       (item) => item.label === '総人口'
     );
     if (!populationData) {
-      return;
+      throw Error('on page error');
     }
     return [
       {
