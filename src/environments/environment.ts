@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  resas_token: process.env.RESAS_TOKEN,
+  resas_token: 'giZoMB9jeBtsCjWgQUW70tVkHsMG7HWkZLO89WD6',
   host_url: 'https://opendata.resas-portal.go.jp/api',
   host_version: 'v1',
 };
