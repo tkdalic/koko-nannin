@@ -8,11 +8,11 @@ https://tkdalic.github.io/koko-nannin/
 
 ## Requirements
 
-言語: node v12
+言語: node v16
 
 フレームワーク:  
-Angular v11  
-Angular Material v11  
+Angular v13  
+Angular Material v13  
 Chart.js v2  
 Storybook v6
 

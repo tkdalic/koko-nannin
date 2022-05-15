@@ -15,8 +15,8 @@ export default {
   ],
 } as Meta;
 
-const Template: Story<CheckboxComponent | { ngModel: boolean }> = (
-  args: CheckboxComponent | { ngModel: boolean }
+const Template: Story<CheckboxComponent> = (
+  args: CheckboxComponent
 ) => ({
   component: CheckboxComponent,
   props: args,
@@ -24,10 +24,10 @@ const Template: Story<CheckboxComponent | { ngModel: boolean }> = (
 
 export const True = Template.bind({});
 True.args = {
-  ngModel: true,
+  value: true,
 };
 
 export const False = Template.bind({});
 False.args = {
-  ngModel: false,
+  value: false,
 };
