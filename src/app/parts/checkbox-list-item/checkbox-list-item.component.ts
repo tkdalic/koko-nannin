@@ -5,14 +5,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   templateUrl: './checkbox-list-item.component.html',
   styleUrls: ['./checkbox-list-item.component.scss'],
 })
-export class CheckboxListItemComponent implements OnInit {
+export class CheckboxListItemComponent {
   @Input() value = false;
   @Output() valueChange = new EventEmitter<boolean>();
   @Input() label = '';
 
   constructor() {}
-
-  ngOnInit(): void {}
 
   onChange(value: boolean): void {
     this.valueChange.emit(value);
