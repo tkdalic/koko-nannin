@@ -3,13 +3,17 @@
     "interfaces": [
         {
             "name": "CompositionBoundaryData",
-            "id": "interface-CompositionBoundaryData-b4dc9ccaee2f582d63cb6b2d6d2aac86",
+            "id": "interface-CompositionBoundaryData-1dba50415c70c4453898ef03a0b6a3ad67dc434a716a07f07c57caa5a8942bd988f97af691624e9ff082557e3cfb4244d815635cc744198eeaf802be1d94b499",
             "file": "src/app/service/models/composition-boundary-data.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "import { CompositionCategoryData } from './composition-category-data';\n\nexport interface CompositionBoundaryData {\n    boundaryYear: number;\n    data: CompositionCategoryData[];\n}\n",
             "properties": [
                 {
                     "name": "boundaryYear",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -17,6 +21,8 @@
                 },
                 {
                     "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "CompositionCategoryData[]",
                     "optional": false,
                     "description": "",
@@ -24,18 +30,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "CompositionCategoryData",
-            "id": "interface-CompositionCategoryData-5b3b5b28ad31a1f09274fe52f082248e",
+            "id": "interface-CompositionCategoryData-de6b3a1244bf90da3f4076585dfed8962cbde3d039673b5c6e038ca89cd07fcd095e9f4fc7be5a5548f3674e93ae7fc89b36f08a24a98a5a8cfb1208eb3b16b5",
             "file": "src/app/service/models/composition-category-data.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface CompositionCategoryData {\n  label: string;\n  data: { year: number; value: number }[];\n}\n",
             "properties": [
                 {
                     "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "literal type[]",
                     "optional": false,
                     "description": "",
@@ -43,6 +53,8 @@
                 },
                 {
                     "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "string",
                     "optional": false,
                     "description": "",
@@ -50,25 +62,31 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "PopulationCompositionResponse",
-            "id": "interface-PopulationCompositionResponse-042bd36226fc0fe948c7ce78cb6fd11e",
+            "id": "interface-PopulationCompositionResponse-9e113efd76d8a63cd0d6a188eaf58d43a0bdadd9b5489306b00ac99eac89c673d3fd927fee3380387e18b990906df9b38b0d411d7611358b7e5c74062e90bf22",
             "file": "src/app/service/models/population-composition-response.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "import { CompositionBoundaryData } from './composition-boundary-data';\n\nexport interface PopulationCompositionResponse {\n  messages: null;\n  result: CompositionBoundaryData;\n}\n",
+            "sourceCode": "import { CompositionBoundaryData } from './composition-boundary-data';\n\nexport interface PopulationCompositionResponse {\n  message: null;\n  result: CompositionBoundaryData;\n}\n",
             "properties": [
                 {
-                    "name": "messages",
-                    "type": "null",
+                    "name": "message",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
                     "optional": false,
                     "description": "",
                     "line": 4
                 },
                 {
                     "name": "result",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "CompositionBoundaryData",
                     "optional": false,
                     "description": "",
@@ -76,18 +94,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "PrefectureInfo",
-            "id": "interface-PrefectureInfo-021c4f6c4568325618c9a5a3e0ccc64f",
+            "id": "interface-PrefectureInfo-1d9883603608ffb1c2a1291915bcf84f3525bd935bff51f3b3a1bd79bbc36d60ce84016c97d99258f7a3c31b9832d4689c9f689b1f35cec60cf998e585b94b9c",
             "file": "src/app/service/models/prefecture-info.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "export interface PrefectureInfo {\n  prefCode: number;\n  prefName: string;\n}\n",
             "properties": [
                 {
                     "name": "prefCode",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "number",
                     "optional": false,
                     "description": "",
@@ -95,6 +117,8 @@
                 },
                 {
                     "name": "prefName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "string",
                     "optional": false,
                     "description": "",
@@ -102,18 +126,22 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         },
         {
             "name": "PrefectureModel",
-            "id": "interface-PrefectureModel-a1619cd769a67d7b1a84307846a00940",
+            "id": "interface-PrefectureModel-44c8c1592c11f7aa01ab81be71fce82c97225deaa9b3905a1fbed686d4830d805e370c83eb70b850ee025567d7d7105ff6bd5bae4c7656100299e52eeb987843",
             "file": "src/app/pages/population-composition/interfaces/prefecture-model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "import { PrefectureInfo } from 'src/app/service/models/prefecture-info';\n\nexport interface PrefectureModel extends PrefectureInfo {\n  value: boolean;\n}\n",
             "properties": [
                 {
                     "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "boolean",
                     "optional": false,
                     "description": "",
@@ -121,26 +149,32 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": [],
             "extends": "PrefectureInfo"
         },
         {
             "name": "PrefectureResponse",
-            "id": "interface-PrefectureResponse-bd2bd19d664ae83bea10b1792bbe40b6",
+            "id": "interface-PrefectureResponse-c0e20c88dcdb7781bd687c5487aedf223a1b713d3d2db5362b2e6882b93c9f73f7af749e385635692b40794ad143066871414ce505ff4ef71efb5f8050b23726",
             "file": "src/app/service/models/prefecture-response.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
             "type": "interface",
             "sourceCode": "import { PrefectureInfo } from './prefecture-info';\nexport interface PrefectureResponse {\n  message: null;\n  result: PrefectureInfo[];\n}\n",
             "properties": [
                 {
                     "name": "message",
-                    "type": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
                     "optional": false,
                     "description": "",
                     "line": 3
                 },
                 {
                     "name": "result",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "PrefectureInfo[]",
                     "optional": false,
                     "description": "",
@@ -148,25 +182,110 @@
                 }
             ],
             "indexSignatures": [],
-            "kind": 150,
+            "kind": 165,
             "methods": []
         }
     ],
     "injectables": [
         {
+            "name": "ErrorHandlerService",
+            "id": "injectable-ErrorHandlerService-a5bead319f1410197432ef406c99a3ff24eb2054af6e2d99a620d99b3007ef93194b7e442e7e75f134b15571d4d884be502605e1fe6b58ed39106fb2349d6152",
+            "file": "src/app/service/error-handler.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "handleError",
+                    "args": [
+                        {
+                            "name": "e",
+                            "type": "object",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 10,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "e",
+                            "type": "object",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { ErrorHandler, Injectable, NgZone } from '@angular/core';\nimport { Router } from '@angular/router';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class ErrorHandlerService implements ErrorHandler {\n  constructor(private zone: NgZone, private router: Router) {}\n\n  handleError(e: object): void {\n    console.error('error: ', e);\n\n    this.zone.run(() => {\n      // URLに \"/500\" を表示せず画面遷移する\n      this.router.navigate(['/500'], { skipLocationChange: true });\n    });\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "zone",
+                        "type": "NgZone",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 7,
+                "jsdoctags": [
+                    {
+                        "name": "zone",
+                        "type": "NgZone",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "router",
+                        "type": "Router",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "type": "injectable"
+        },
+        {
             "name": "RestApiService",
-            "id": "injectable-RestApiService-9c9c59160a5f54131a55e3e238864880",
+            "id": "injectable-RestApiService-8ef9b0b117bf25c1ffc81ee7ff48e2da9de912f6c24c264fa05f8ae6ec90d6f7a4fb698bddf578f3029b373ed8809abed86263d741d404cb6d86ffdd67682435",
             "file": "src/app/service/rest-api.service.ts",
             "properties": [
                 {
                     "name": "host",
                     "defaultValue": "`${environment.host_url}/${environment.host_version}`",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
                     "line": 11,
                     "modifierKind": [
-                        112
+                        121
                     ]
                 }
             ],
@@ -176,11 +295,15 @@
                     "args": [
                         {
                             "name": "path",
-                            "type": "string"
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         },
                         {
                             "name": "httpOptions",
-                            "type": "object"
+                            "type": "object",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
@@ -189,13 +312,18 @@
                         "T"
                     ],
                     "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        112
+                        121,
+                        131
                     ],
                     "jsdoctags": [
                         {
                             "name": "path",
                             "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -203,6 +331,8 @@
                         {
                             "name": "httpOptions",
                             "type": "object",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -214,20 +344,26 @@
                     "args": [
                         {
                             "name": "prefCode",
-                            "type": "string"
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "Promise<PopulationCompositionResponse>",
                     "typeParameters": [],
-                    "line": 30,
+                    "line": 44,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ],
                     "jsdoctags": [
                         {
                             "name": "prefCode",
                             "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -240,21 +376,30 @@
                     "optional": false,
                     "returnType": "Promise<PrefectureResponse>",
                     "typeParameters": [],
-                    "line": 19,
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        114
+                        123
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "description": "",
-            "sourceCode": "import { HttpClient, HttpHeaders } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { environment } from 'src/environments/environment';\nimport { PopulationCompositionResponse } from './models/population-composition-response';\nimport { PrefectureResponse } from './models/prefecture-response';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class RestApiService {\n  private host = `${environment.host_url}/${environment.host_version}`;\n\n  constructor(private http: HttpClient) {}\n\n  private get<T>(path: string, httpOptions: object): Promise<T> {\n    return this.http.get<T>(`${this.host}/${path}`, httpOptions).toPromise();\n  }\n\n  public getPrefectures(): Promise<PrefectureResponse> {\n    const path = 'prefectures';\n    const httpOptions = {\n      headers: new HttpHeaders({\n        'Content-type': 'application/json',\n        'x-api-key': environment.resas_token as string,\n      }),\n    };\n    return this.get<PrefectureResponse>(path, httpOptions);\n  }\n\n  public getPopulationComposition(\n    prefCode: string\n  ): Promise<PopulationCompositionResponse> {\n    const path = 'population/composition/perYear';\n    const httpOptions = {\n      params: {\n        prefCode,\n        cityCode: '-',\n      },\n      headers: new HttpHeaders({\n        'Content-type': 'application/json',\n        'x-api-key': environment.resas_token as string,\n      }),\n    };\n    return this.get<PopulationCompositionResponse>(path, httpOptions);\n  }\n}\n",
+            "rawdescription": "\n",
+            "sourceCode": "import { HttpClient, HttpHeaders } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { environment } from 'src/environments/environment';\nimport { PopulationCompositionResponse } from './models/population-composition-response';\nimport { PrefectureResponse } from './models/prefecture-response';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class RestApiService {\n  private host = `${environment.host_url}/${environment.host_version}`;\n\n  constructor(private http: HttpClient) {}\n\n  private async get<T extends { message: null | string }>(\n    path: string,\n    httpOptions: object\n  ): Promise<T> {\n    return this.http\n      .get<T>(`${this.host}/${path}`, httpOptions)\n      .toPromise()\n      .then((res) => {\n        if (res.message != null) {\n          throw Error('api error');\n        }\n        return res;\n      })\n      .catch((e) => {\n        throw Error('api error');\n      });\n  }\n\n  public getPrefectures(): Promise<PrefectureResponse> {\n    const path = 'prefectures';\n    const httpOptions = {\n      headers: new HttpHeaders({\n        'Content-type': 'application/json',\n        'x-api-key': environment.resas_token as string,\n      }),\n    };\n    return this.get<PrefectureResponse>(path, httpOptions);\n  }\n\n  public getPopulationComposition(\n    prefCode: string\n  ): Promise<PopulationCompositionResponse> {\n    const path = 'population/composition/perYear';\n    const httpOptions = {\n      params: {\n        prefCode,\n        cityCode: '-',\n      },\n      headers: new HttpHeaders({\n        'Content-type': 'application/json',\n        'x-api-key': environment.resas_token as string,\n      }),\n    };\n    return this.get<PopulationCompositionResponse>(path, httpOptions);\n  }\n}\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [
                     {
                         "name": "http",
-                        "type": "HttpClient"
+                        "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
                 "line": 11,
@@ -262,6 +407,8 @@
                     {
                         "name": "http",
                         "type": "HttpClient",
+                        "deprecated": false,
+                        "deprecationMessage": "",
                         "tagName": {
                             "text": "param"
                         }
@@ -271,50 +418,14 @@
             "type": "injectable"
         }
     ],
-    "classes": [
-        {
-            "name": "AppPage",
-            "id": "class-AppPage-ee2067dfb1c303f41003aea7d82d51e0",
-            "file": "e2e/src/app.po.ts",
-            "type": "class",
-            "sourceCode": "import { browser, by, element } from 'protractor';\n\nexport class AppPage {\n  async navigateTo(): Promise<unknown> {\n    return browser.get(browser.baseUrl);\n  }\n\n  async getTitleText(): Promise<string> {\n    return element(by.css('app-root .content span')).getText();\n  }\n}\n",
-            "properties": [],
-            "methods": [
-                {
-                    "name": "getTitleText",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "Promise<string>",
-                    "typeParameters": [],
-                    "line": 8,
-                    "modifierKind": [
-                        120
-                    ]
-                },
-                {
-                    "name": "navigateTo",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "Promise<unknown>",
-                    "typeParameters": [],
-                    "line": 4,
-                    "modifierKind": [
-                        120
-                    ]
-                }
-            ],
-            "indexSignatures": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "hostBindings": [],
-            "hostListeners": []
-        }
-    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
     "directives": [],
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-1e4d379814e998ba784513d6a2cf232e",
+            "id": "component-AppComponent-894355d2937f09cc0fa367ce1778b752c7f2a80b757bf2ed09617c79715db585546ffc26e3bd99ba7bec79d0b77dec0e2750e34a3f6a70b215312c4c9305b2bb",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -334,10 +445,12 @@
             "outputsClass": [],
             "propertiesClass": [],
             "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n})\nexport class AppComponent {}\n",
             "assetsDirs": [],
@@ -352,7 +465,7 @@
         },
         {
             "name": "ChartComponent",
-            "id": "component-ChartComponent-2306ffcf25a08fd8fd67f7547feb1e5f",
+            "id": "component-ChartComponent-44e0b71e908a6fbdc308d767da17e3d1e1b92f239cf833d02c70cc9ab5b4c55089fe77dcf52fedbb26b719e46344e2156a873a9c0b63c08152ae8c579139edf9",
             "file": "src/app/parts/chart/chart.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -372,24 +485,38 @@
                 {
                     "name": "lineChartData",
                     "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 12,
-                    "type": "ChartDataSets[]"
+                    "type": "ChartDataSets[]",
+                    "decorators": []
                 },
                 {
                     "name": "lineChartLabels",
                     "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 15,
-                    "type": "Label[]"
+                    "type": "Label[]",
+                    "decorators": []
                 },
                 {
                     "name": "xAxesLabel",
                     "defaultValue": "''",
-                    "line": 16
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "yAxesLabel",
                     "defaultValue": "''",
-                    "line": 17
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "string",
+                    "decorators": []
                 }
             ],
             "outputsClass": [],
@@ -397,6 +524,8 @@
                 {
                     "name": "lineChartLegend",
                     "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -405,6 +534,8 @@
                 {
                     "name": "lineChartOptions",
                     "defaultValue": "{\n    responsive: true,\n    elements: {\n      line: {\n        tension: 0,\n        fill: false,\n      },\n    },\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "ChartOptions",
                     "optional": false,
                     "description": "",
@@ -413,6 +544,8 @@
                 {
                     "name": "lineChartPlugins",
                     "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "[]",
                     "optional": false,
                     "description": "",
@@ -421,6 +554,8 @@
                 {
                     "name": "lineChartType",
                     "defaultValue": "'line'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "ChartType",
                     "optional": false,
                     "description": "",
@@ -434,13 +569,17 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 35
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": ""
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\nimport { ChartDataSets, ChartOptions, ChartType } from 'chart.js';\nimport { Color, Label } from 'ng2-charts';\n\n@Component({\n  selector: 'app-chart',\n  templateUrl: './chart.component.html',\n  styleUrls: ['./chart.component.scss'],\n})\nexport class ChartComponent implements OnInit {\n  // data\n  @Input() lineChartData: ChartDataSets[] = [];\n\n  // ラベル\n  @Input() lineChartLabels: Label[] = [];\n  @Input() xAxesLabel = '';\n  @Input() yAxesLabel = '';\n\n  lineChartOptions: ChartOptions = {\n    responsive: true,\n    elements: {\n      line: {\n        tension: 0,\n        fill: false,\n      },\n    },\n  };\n\n  lineChartLegend = true; // グラフの属性ラベル\n  lineChartPlugins = [];\n  lineChartType: ChartType = 'line'; // グラフの種類\n\n  constructor() {}\n\n  ngOnInit(): void {\n    this.lineChartOptions.scales = {\n      xAxes: [\n        {\n          scaleLabel: {\n            display: this.xAxesLabel !== '',\n            labelString: this.xAxesLabel,\n          },\n        },\n      ],\n      yAxes: [\n        {\n          scaleLabel: {\n            display: this.yAxesLabel !== '',\n            labelString: this.yAxesLabel,\n          },\n        },\n      ],\n    };\n  }\n}\n",
             "assetsDirs": [],
@@ -454,6 +593,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 31
             },
@@ -464,7 +605,7 @@
         },
         {
             "name": "CheckboxComponent",
-            "id": "component-CheckboxComponent-e5b9e63904a4a56546e0c209fb81bf92",
+            "id": "component-CheckboxComponent-8c34602d67898a4eeeba9942110920106d0353ac229904de452a9a920fa270311e8503cfbe22e1b31ea1bc64956353ca3ae837f94243894b633fc1fad347c8a2",
             "file": "src/app/parts/checkbox/checkbox.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -491,6 +632,8 @@
                 {
                     "name": "onChange",
                     "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -499,6 +642,8 @@
                 {
                     "name": "onTouched",
                     "defaultValue": "() => {...}",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -507,6 +652,8 @@
                 {
                     "name": "value",
                     "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "optional": false,
                     "description": "",
@@ -520,10 +667,14 @@
                         {
                             "name": "fn",
                             "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "function": [
                                 {
                                     "name": "value",
-                                    "type": "boolean"
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
                                 }
                             ]
                         }
@@ -532,14 +683,20 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 27,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "jsdoctags": [
                         {
                             "name": "fn",
                             "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "function": [
                                 {
                                     "name": "value",
-                                    "type": "boolean"
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
                                 }
                             ],
                             "tagName": {
@@ -554,10 +711,14 @@
                         {
                             "name": "fn",
                             "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "function": [
                                 {
                                     "name": "value",
-                                    "type": "boolean"
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
                                 }
                             ]
                         }
@@ -566,14 +727,20 @@
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 31,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "jsdoctags": [
                         {
                             "name": "fn",
                             "type": "function",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "function": [
                                 {
                                     "name": "value",
-                                    "type": "boolean"
+                                    "type": "boolean",
+                                    "deprecated": false,
+                                    "deprecationMessage": ""
                                 }
                             ],
                             "tagName": {
@@ -587,17 +754,23 @@
                     "args": [
                         {
                             "name": "value",
-                            "type": "boolean"
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
                     "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "jsdoctags": [
                         {
                             "name": "value",
                             "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -605,10 +778,12 @@
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
             "sourceCode": "import { Component, forwardRef } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\n\n@Component({\n  selector: 'app-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.scss'],\n  providers: [\n    {\n      provide: NG_VALUE_ACCESSOR,\n      useExisting: forwardRef(() => CheckboxComponent),\n      multi: true,\n    },\n  ],\n})\nexport class CheckboxComponent implements ControlValueAccessor {\n  value = false;\n  onChange = (value: boolean) => {};\n  onTouched = (value: boolean) => {};\n\n  constructor() {}\n\n  writeValue(value: boolean): void {\n    this.value = value;\n  }\n\n  registerOnChange(fn: (value: boolean) => void): void {\n    this.onChange = fn;\n  }\n\n  registerOnTouched(fn: (value: boolean) => void): void {\n    this.onTouched = fn;\n  }\n}\n",
             "assetsDirs": [],
@@ -622,6 +797,8 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 19
             },
@@ -632,7 +809,7 @@
         },
         {
             "name": "CheckboxListItemComponent",
-            "id": "component-CheckboxListItemComponent-aa29705b90ff93377aa80bf30a3af0b0",
+            "id": "component-CheckboxListItemComponent-a385ab658b949fac9ea6a0f6900d8183cac96b80f7733d32c11d100a6c262bda0842b78cd3a978ac2640b7f9fac782337aec9251c30a8fc5266fa4390a77cdb4",
             "file": "src/app/parts/checkbox-list-item/checkbox-list-item.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -652,18 +829,28 @@
                 {
                     "name": "label",
                     "defaultValue": "''",
-                    "line": 11
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
                 },
                 {
                     "name": "value",
                     "defaultValue": "false",
-                    "line": 9
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 9,
+                    "type": "boolean",
+                    "decorators": []
                 }
             ],
             "outputsClass": [
                 {
                     "name": "valueChange",
                     "defaultValue": "new EventEmitter<boolean>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "line": 10,
                     "type": "EventEmitter"
                 }
@@ -671,29 +858,27 @@
             "propertiesClass": [],
             "methodsClass": [
                 {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 15
-                },
-                {
                     "name": "onChange",
                     "args": [
                         {
                             "name": "value",
-                            "type": "boolean"
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 17,
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "jsdoctags": [
                         {
                             "name": "value",
                             "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -701,12 +886,14 @@
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox-list-item',\n  templateUrl: './checkbox-list-item.component.html',\n  styleUrls: ['./checkbox-list-item.component.scss'],\n})\nexport class CheckboxListItemComponent implements OnInit {\n  @Input() value = false;\n  @Output() valueChange = new EventEmitter<boolean>();\n  @Input() label = '';\n\n  constructor() {}\n\n  ngOnInit(): void {}\n\n  onChange(value: boolean): void {\n    this.valueChange.emit(value);\n  }\n}\n",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox-list-item',\n  templateUrl: './checkbox-list-item.component.html',\n  styleUrls: ['./checkbox-list-item.component.scss'],\n})\nexport class CheckboxListItemComponent {\n  @Input() value = false;\n  @Output() valueChange = new EventEmitter<boolean>();\n  @Input() label = '';\n\n  constructor() {}\n\n  onChange(value: boolean): void {\n    this.valueChange.emit(value);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -718,17 +905,16 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 11
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<mat-card>\n  <label>\n    <app-checkbox\n      [ngModel]=\"value\"\n      (ngModelChange)=\"onChange($event)\"\n    ></app-checkbox>\n    {{ label }}\n  </label>\n</mat-card>\n"
         },
         {
             "name": "HeaderComponent",
-            "id": "component-HeaderComponent-e41aded7dce8dcc9f3904c316e7fb138",
+            "id": "component-HeaderComponent-d4d777b2ae63992f19213c6d743f2d86e3b4b543b9ce54268d7c4b2316f97f93c14f73d8603b6683b8727b057dcab1fb85682cf5e20ac9a5fd2d2e92333101e9",
             "file": "src/app/parts/header/header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -747,22 +933,15 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12
-                }
-            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss']\n})\nexport class HeaderComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss'],\n})\nexport class HeaderComponent {\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -774,17 +953,64 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 8
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<mat-toolbar color=\"primary\">\n  <span>ここ何人？</span>\n</mat-toolbar>\n"
         },
         {
+            "name": "InternalServerErrorComponent",
+            "id": "component-InternalServerErrorComponent-f9821126db65c297a35c5b4cdba47a8fb87bc99a4cd14d946bf6a4ed91ae0fc915fb49a45cfc45cd118115b4fc7db8afec49f1d480becd21f340bad4ed657b55",
+            "file": "src/app/pages/internal-server-error/internal-server-error.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-internal-server-error",
+            "styleUrls": [
+                "./internal-server-error.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./internal-server-error.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-internal-server-error',\n  templateUrl: './internal-server-error.component.html',\n  styleUrls: ['./internal-server-error.component.scss'],\n})\nexport class InternalServerErrorComponent {\n  constructor() {}\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./internal-server-error.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "templateData": "<app-page-layout>\n  <app-header header></app-header>\n  <div body>\n    <h2>500 エラーが発生しました</h2>\n\n    <p>ページをリロードしてください</p>\n  </div>\n</app-page-layout>\n"
+        },
+        {
             "name": "PageLayoutComponent",
-            "id": "component-PageLayoutComponent-6a4964cb9d824e058a99803fdc305ab5",
+            "id": "component-PageLayoutComponent-3af56c264661f8e32219be88802bb70d5ce2e57a23e6c46cb5233041dd10b7eb9b96896cca4135614ddc608a32764a7696edf2e3873f91802df58c4967fc2672",
             "file": "src/app/templates/page-layout/page-layout.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -803,26 +1029,19 @@
             "inputsClass": [],
             "outputsClass": [],
             "propertiesClass": [],
-            "methodsClass": [
-                {
-                    "name": "ngOnInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 12
-                }
-            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-page-layout',\n  templateUrl: './page-layout.component.html',\n  styleUrls: ['./page-layout.component.scss']\n})\nexport class PageLayoutComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-page-layout',\n  templateUrl: './page-layout.component.html',\n  styleUrls: ['./page-layout.component.scss'],\n})\nexport class PageLayoutComponent {\n  constructor() {}\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".page-layout {\n  width: 100%;\n  &__header {\n    position: absolute;\n    width: 100%;\n    height: 3rem;\n    top: 0;\n  }\n  &__body {\n    margin-top: 3rem;\n    width: 100%;\n    height: 100%;\n  }\n}\n",
+                    "data": ".page-layout {\n  width: 100%;\n  &__header {\n    position: absolute;\n    width: 100%;\n    height: 64px;\n    top: 0;\n  }\n  &__body {\n    margin-top: 64px;\n    width: 100%;\n    height: 100%;\n  }\n}\n",
                     "styleUrl": "./page-layout.component.scss"
                 }
             ],
@@ -830,17 +1049,16 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [],
                 "line": 8
             },
-            "implements": [
-                "OnInit"
-            ],
             "templateData": "<div class=\"page-layout\">\n  <div class=\"page-layout__header\">\n    <ng-content select=\"[header]\"></ng-content>\n  </div>\n  <div class=\"page-layout__body\">\n    <ng-content select=\"[body]\"></ng-content>\n  </div>\n</div>\n"
         },
         {
             "name": "PopulationCompositionComponent",
-            "id": "component-PopulationCompositionComponent-aca075674ef2728b41a6a11564074ed2",
+            "id": "component-PopulationCompositionComponent-761ec0c4ecd298ec66e7dbfd532d9468353d8e5e820188c129dfe175ba56d5abceea778a0023c9a844638515e746dc93c6fac4da7cdf4579cacbfeef655040f4",
             "file": "src/app/pages/population-composition/population-composition.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -862,6 +1080,8 @@
                 {
                     "name": "lineChartData",
                     "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "ChartDataSets[]",
                     "optional": false,
                     "description": "",
@@ -870,6 +1090,8 @@
                 {
                     "name": "lineChartLabels",
                     "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Label[]",
                     "optional": false,
                     "description": "",
@@ -878,6 +1100,8 @@
                 {
                     "name": "prefectureInfoList",
                     "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "PrefectureModel[]",
                     "optional": false,
                     "description": "",
@@ -890,20 +1114,26 @@
                     "args": [
                         {
                             "name": "prefecture",
-                            "type": "PrefectureModel"
+                            "type": "PrefectureModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
                     ],
                     "optional": false,
                     "returnType": "Promise<void | >",
                     "typeParameters": [],
-                    "line": 43,
+                    "line": 47,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        120
+                        131
                     ],
                     "jsdoctags": [
                         {
                             "name": "prefecture",
                             "type": "PrefectureModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
                             "tagName": {
                                 "text": "param"
                             }
@@ -916,7 +1146,9 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 19
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
                 },
                 {
                     "name": "prefectureValueChange",
@@ -925,21 +1157,25 @@
                     "returnType": "Promise<void>",
                     "typeParameters": [],
                     "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "modifierKind": [
-                        120
+                        131
                     ]
                 }
             ],
+            "deprecated": false,
+            "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "description": "",
-            "rawdescription": "",
+            "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { ChartDataSets } from 'chart.js';\nimport { Label } from 'ng2-charts';\nimport { RestApiService } from 'src/app/service/rest-api.service';\nimport { PrefectureModel } from './interfaces/prefecture-model';\n\n@Component({\n  selector: 'app-population-composition',\n  templateUrl: './population-composition.component.html',\n  styleUrls: ['./population-composition.component.scss'],\n})\nexport class PopulationCompositionComponent implements OnInit {\n  prefectureInfoList: PrefectureModel[] = [];\n  constructor(private restApi: RestApiService) {}\n\n  lineChartData: ChartDataSets[] = [];\n  lineChartLabels: Label[] = [];\n\n  ngOnInit(): void {\n    this.restApi.getPrefectures().then(\n      (res) =>\n        (this.prefectureInfoList = res.result.map((item) => ({\n          ...item,\n          value: false,\n        })))\n    );\n  }\n\n  async prefectureValueChange(): Promise<void> {\n    const graphDatas = await Promise.all(\n      this.prefectureInfoList\n        .filter((prefectureInfo) => prefectureInfo.value)\n        .map((prefectureInfo) => this.getPopulationComposition(prefectureInfo))\n    );\n    const filteredGraphDatas = graphDatas.filter(\n      (prefectureInfo) => prefectureInfo\n    ) as [ChartDataSets, string[]][];\n\n    this.lineChartData = filteredGraphDatas.map((graphData) => graphData[0]);\n    this.lineChartLabels = filteredGraphDatas[0][1];\n  }\n\n  async getPopulationComposition(\n    prefecture: PrefectureModel\n  ): Promise<void | [ChartDataSets, string[]]> {\n    const response = await this.restApi.getPopulationComposition(\n      prefecture.prefCode.toString()\n    );\n    const populationData = response.result.data.find(\n      (item) => item.label === '総人口'\n    );\n    if (!populationData) {\n      return;\n    }\n    return [\n      {\n        label: prefecture.prefName,\n        data: populationData.data.map((item) => item.value),\n      },\n      populationData.data.map((item) => item.year.toString()),\n    ];\n  }\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { ChartDataSets } from 'chart.js';\nimport { Label } from 'ng2-charts';\nimport { RestApiService } from 'src/app/service/rest-api.service';\nimport { PrefectureModel } from './interfaces/prefecture-model';\n\n@Component({\n  selector: 'app-population-composition',\n  templateUrl: './population-composition.component.html',\n  styleUrls: ['./population-composition.component.scss'],\n})\nexport class PopulationCompositionComponent implements OnInit {\n  prefectureInfoList: PrefectureModel[] = [];\n  constructor(private restApi: RestApiService) {}\n\n  lineChartData: ChartDataSets[] = [];\n  lineChartLabels: Label[] = [];\n\n  ngOnInit(): void {\n    this.restApi.getPrefectures().then(\n      (res) =>\n        (this.prefectureInfoList = res.result.map((item) => ({\n          ...item,\n          value: false,\n        })))\n    );\n  }\n\n  async prefectureValueChange(): Promise<void> {\n    const graphDatas = await Promise.all(\n      this.prefectureInfoList\n        .filter((prefectureInfo) => prefectureInfo.value)\n        .map((prefectureInfo) => this.getPopulationComposition(prefectureInfo))\n    );\n    const filteredGraphDatas = graphDatas.filter(\n      (prefectureInfo) => prefectureInfo\n    ) as [ChartDataSets, string[]][];\n\n    if (filteredGraphDatas.length === 0) {\n      this.lineChartData = [];\n      return;\n    }\n    this.lineChartData = filteredGraphDatas.map((graphData) => graphData[0]);\n    this.lineChartLabels = filteredGraphDatas[0][1];\n  }\n\n  async getPopulationComposition(\n    prefecture: PrefectureModel\n  ): Promise<void | [ChartDataSets, string[]]> {\n    const response = await this.restApi.getPopulationComposition(\n      prefecture.prefCode.toString()\n    );\n    const populationData = response.result.data.find(\n      (item) => item.label === '総人口'\n    );\n    if (!populationData) {\n      throw Error('on page error');\n    }\n    return [\n      {\n        label: prefecture.prefName,\n        data: populationData.data.map((item) => item.value),\n      },\n      populationData.data.map((item) => item.year.toString()),\n    ];\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".body {\n  display: flex;\n  flex-direction: column;\n  margin: 20px;\n}\n\n.prefecture {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n\n  &__card {\n    min-width: 150px;\n    margin: 10px;\n    flex: 1;\n  }\n}\n",
+                    "data": ".body {\n  display: flex;\n  flex-direction: column;\n  margin: 20px;\n}\n\n.chart{\n  &__note {\n    font-size: 0.9rem;\n    color: #888888;\n    text-align: right;\n  }\n}\n\n.prefecture {\n  &__cards {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    &__card {\n      min-width: 150px;\n      margin: 5px;\n      flex: 1;\n    }\n  }\n}\n",
                     "styleUrl": "./population-composition.component.scss"
                 }
             ],
@@ -947,10 +1183,14 @@
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "args": [
                     {
                         "name": "restApi",
-                        "type": "RestApiService"
+                        "type": "RestApiService",
+                        "deprecated": false,
+                        "deprecationMessage": ""
                     }
                 ],
                 "line": 13,
@@ -958,6 +1198,8 @@
                     {
                         "name": "restApi",
                         "type": "RestApiService",
+                        "deprecated": false,
+                        "deprecationMessage": "",
                         "tagName": {
                             "text": "param"
                         }
@@ -967,12 +1209,19 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<p>population-composition works!</p>\n<app-page-layout>\n  <app-header header></app-header>\n  <div class=\"body\" body>\n    <div class=\"prefecture\">\n      <app-checkbox-list-item\n        class=\"prefecture__card\"\n        *ngFor=\"let prefectureInfo of prefectureInfoList\"\n        [label]=\"prefectureInfo.prefName\"\n        [(value)]=\"prefectureInfo.value\"\n        (valueChange)=\"prefectureValueChange()\"\n      ></app-checkbox-list-item>\n    </div>\n    <div class=\"chart\">\n      <app-chart\n        xAxesLabel=\"年度（年）\"\n        yAxesLabel=\"人口（人）\"\n        [lineChartData]=\"lineChartData\"\n        [lineChartLabels]=\"lineChartLabels\"\n      ></app-chart>\n    </div>\n  </div>\n</app-page-layout>\n"
+            "templateData": "<p>population-composition works!</p>\n<app-page-layout>\n  <app-header header></app-header>\n  <div class=\"body\" body>\n    <div class=\"chart\">\n      <h2 class=\"chart__title\">人口グラフ</h2>\n      <app-chart\n        xAxesLabel=\"年度（年）\"\n        yAxesLabel=\"人口（人）\"\n        [lineChartData]=\"lineChartData\"\n        [lineChartLabels]=\"lineChartLabels\"\n      ></app-chart>\n      <p class=\"chart__note\">出典：RESAS（地域経済分析システム）</p>\n    </div>\n    <div class=\"prefecture\">\n      <h2 class=\"prefecture__title\">都道府県</h2>\n      <div class=\"prefecture__cards\">\n        <app-checkbox-list-item\n          class=\"prefecture__cards__card\"\n          *ngFor=\"let prefectureInfo of prefectureInfoList\"\n          [label]=\"prefectureInfo.prefName\"\n          [(value)]=\"prefectureInfo.value\"\n          (valueChange)=\"prefectureValueChange()\"\n        ></app-checkbox-list-item>\n      </div>\n    </div>\n  </div>\n</app-page-layout>\n"
         }
     ],
     "modules": [
         {
             "name": "AppModule",
+            "id": "module-AppModule-8a92063adbf9985177a7ca5c136c5cabf7b0217e10c596f5b5854dc3ddba7c390bc0a61f742534857ac77692743d1681b9077c0daa475beba48c6d99764234a9",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { BrowserModule } from '@angular/platform-browser';\nimport { ErrorHandler, NgModule } from '@angular/core';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { CheckboxComponent } from './parts/checkbox/checkbox.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { MatCheckboxModule } from '@angular/material/checkbox';\nimport { MatCardModule } from '@angular/material/card';\nimport { FormsModule } from '@angular/forms';\nimport { HttpClientModule } from '@angular/common/http';\nimport { CheckboxListItemComponent } from './parts/checkbox-list-item/checkbox-list-item.component';\nimport { ChartComponent } from './parts/chart/chart.component';\nimport { ChartsModule } from 'ng2-charts';\nimport { HeaderComponent } from './parts/header/header.component';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { PageLayoutComponent } from './templates/page-layout/page-layout.component';\nimport { PopulationCompositionComponent } from './pages/population-composition/population-composition.component';\nimport { RouterModule } from '@angular/router';\nimport { InternalServerErrorComponent } from './pages/internal-server-error/internal-server-error.component';\nimport { ErrorHandlerService } from './service/error-handler.service';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    CheckboxComponent,\n    CheckboxListItemComponent,\n    ChartComponent,\n    HeaderComponent,\n    PageLayoutComponent,\n    PopulationCompositionComponent,\n    InternalServerErrorComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    BrowserAnimationsModule,\n    FormsModule,\n    MatCheckboxModule,\n    MatCardModule,\n    ChartsModule,\n    HttpClientModule,\n    MatToolbarModule,\n    RouterModule,\n  ],\n  providers: [\n    {\n      provide: ErrorHandler,\n      useClass: ErrorHandlerService, // これ\n    },\n  ],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -995,6 +1244,9 @@
                         },
                         {
                             "name": "HeaderComponent"
+                        },
+                        {
+                            "name": "InternalServerErrorComponent"
                         },
                         {
                             "name": "PageLayoutComponent"
@@ -1032,6 +1284,13 @@
         },
         {
             "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-e756797f2a2efe62fe511833f3412f38024ac12019bfc8123444692eb787bc96fe51ab1ab85c7bdd11dbbd1a3e70a87bc3e8d0e92768c79930069abe961f2c74",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\nimport { InternalServerErrorComponent } from './pages/internal-server-error/internal-server-error.component';\nimport { PopulationCompositionComponent } from './pages/population-composition/population-composition.component';\n\nconst routes: Routes = [\n  { path: '', component: PopulationCompositionComponent },\n  { path: '500', component: InternalServerErrorComponent },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule],\n})\nexport class AppRoutingModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -1063,26 +1322,22 @@
     "miscellaneous": {
         "variables": [
             {
-                "name": "context",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/test.ts",
-                "type": "",
-                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-            },
-            {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/environments/environment.prod.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\n  production: true,\n  resas_token: process.env.RESAS_TOKEN,\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
+                "defaultValue": "{\n  production: true,\n  resas_token: 'giZoMB9jeBtsCjWgQUW70tVkHsMG7HWkZLO89WD6',\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
             },
             {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\n  production: false,\n  resas_token: 'giZoMB9jeBtsCjWgQUW70tVkHsMG7HWkZLO89WD6',\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
             },
@@ -1091,6 +1346,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1099,6 +1356,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1107,6 +1366,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/checkbox-list-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1115,6 +1376,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/chart.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -1123,21 +1386,18 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/page-layout.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "require",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/test.ts",
-                "type": "literal type"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/chart.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<ChartComponent>",
                 "defaultValue": "(args: ChartComponent) => ({\n  component: ChartComponent,\n  props: args,\n})"
             },
@@ -1146,6 +1406,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/checkbox-list-item.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<CheckboxListItemComponent>",
                 "defaultValue": "(\n  args: CheckboxListItemComponent\n) => ({\n  component: CheckboxListItemComponent,\n  props: args,\n})"
             },
@@ -1153,15 +1415,9 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/header.stories.ts",
-                "type": "Story<HeaderComponent>",
-                "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "src/stories/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<CheckboxComponent | literal type>",
                 "defaultValue": "(\n  args: CheckboxComponent | { ngModel: boolean }\n) => ({\n  component: CheckboxComponent,\n  props: args,\n})"
             },
@@ -1169,7 +1425,19 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<HeaderComponent>",
+                "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/page-layout.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "Story<PageLayoutComponent>",
                 "defaultValue": "(args: PageLayoutComponent) => ({\n  component: PageLayoutComponent,\n  props: args,\n  template: `\n  <app-page-layout>\n  <div header> Header!!</div>\n  <div body> Body!!</div>\n  </app-page-layout>\n  `\n})"
             },
@@ -1178,6 +1446,8 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/checkbox.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             }
@@ -1186,31 +1456,16 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
-            "src/test.ts": [
-                {
-                    "name": "context",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/test.ts",
-                    "type": "",
-                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
-                },
-                {
-                    "name": "require",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/test.ts",
-                    "type": "literal type"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/environments/environment.prod.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\n  production: true,\n  resas_token: process.env.RESAS_TOKEN,\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
+                    "defaultValue": "{\n  production: true,\n  resas_token: 'giZoMB9jeBtsCjWgQUW70tVkHsMG7HWkZLO89WD6',\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
                 }
             ],
             "src/environments/environment.ts": [
@@ -1219,6 +1474,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false,\n  resas_token: 'giZoMB9jeBtsCjWgQUW70tVkHsMG7HWkZLO89WD6',\n  host_url: 'https://opendata.resas-portal.go.jp/api',\n  host_version: 'v1',\n}"
                 }
@@ -1229,6 +1486,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1237,6 +1496,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<CheckboxComponent | literal type>",
                     "defaultValue": "(\n  args: CheckboxComponent | { ngModel: boolean }\n) => ({\n  component: CheckboxComponent,\n  props: args,\n})"
                 },
@@ -1245,6 +1506,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/checkbox.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 }
@@ -1255,6 +1518,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1263,6 +1528,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<HeaderComponent>",
                     "defaultValue": "(args: HeaderComponent) => ({\n  component: HeaderComponent,\n  props: args,\n})"
                 }
@@ -1273,6 +1540,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/checkbox-list-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1281,6 +1550,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/checkbox-list-item.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<CheckboxListItemComponent>",
                     "defaultValue": "(\n  args: CheckboxListItemComponent\n) => ({\n  component: CheckboxListItemComponent,\n  props: args,\n})"
                 }
@@ -1291,6 +1562,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/chart.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1299,6 +1572,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/chart.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<ChartComponent>",
                     "defaultValue": "(args: ChartComponent) => ({\n  component: ChartComponent,\n  props: args,\n})"
                 }
@@ -1309,6 +1584,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/page-layout.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
                 },
@@ -1317,6 +1594,8 @@
                     "ctype": "miscellaneous",
                     "subtype": "variable",
                     "file": "src/stories/page-layout.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
                     "type": "Story<PageLayoutComponent>",
                     "defaultValue": "(args: PageLayoutComponent) => ({\n  component: PageLayoutComponent,\n  props: args,\n  template: `\n  <app-page-layout>\n  <div header> Header!!</div>\n  <div body> Body!!</div>\n  </app-page-layout>\n  `\n})"
                 }
@@ -1339,6 +1618,10 @@
                     {
                         "path": "",
                         "component": "PopulationCompositionComponent"
+                    },
+                    {
+                        "path": "500",
+                        "component": "InternalServerErrorComponent"
                     }
                 ],
                 "kind": "module"
@@ -1350,21 +1633,21 @@
         "status": "low",
         "files": [
             {
-                "filePath": "e2e/src/app.po.ts",
-                "type": "class",
-                "linktype": "classe",
-                "name": "AppPage",
-                "coveragePercent": 0,
-                "coverageCount": "0/3",
-                "status": "low"
-            },
-            {
                 "filePath": "src/app/app.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/internal-server-error/internal-server-error.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InternalServerErrorComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -1400,7 +1683,7 @@
                 "linktype": "component",
                 "name": "CheckboxListItemComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/6",
                 "status": "low"
             },
             {
@@ -1417,6 +1700,15 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/service/error-handler.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "ErrorHandlerService",
                 "coveragePercent": 0,
                 "coverageCount": "0/3",
                 "status": "low"
@@ -1481,7 +1773,7 @@
                 "linktype": "component",
                 "name": "PageLayoutComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
@@ -1610,26 +1902,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/test.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "context",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/test.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "require",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
